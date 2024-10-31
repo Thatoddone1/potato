@@ -2,7 +2,7 @@
     import Potato from './Potato.svelte';
     import ExplodedPotato from './ExplodedPotato.svelte';
     
-    let amountOfPotatoes = 14;
+    let amountOfPotatoes = 15;
 
     let exploded = Array(amountOfPotatoes).fill(false)
     
