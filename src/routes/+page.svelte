@@ -6,15 +6,12 @@
 
     let exploded = Array(amountOfPotatoes).fill(false)
     
-    console.log(exploded)
     
     function handleExplode(number) {
         exploded[number]=true;
-        console.log("Exploded!");
     }
     function handleUnExplode(number) {
         exploded[number]=false;
-        console.log("unExploded!");
     }
 </script>
 
