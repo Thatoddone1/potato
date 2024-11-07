@@ -1,13 +1,20 @@
 <script>
     import Potato from './Potato.svelte';
     import ExplodedPotato from './ExplodedPotato.svelte';
+    import Explosion from './Explosion.svelte';
     import { fly } from 'svelte/transition';
     
     let amountOfPotatoes = 110;
     let exploded = Array(amountOfPotatoes).fill(false);
+    let explosion = Array(amountOfPotatoes).fill(false);
     
     function handleExplode(number) {
-        exploded[number] = true;
+
+        explosion[number] = true;
+        setTimeout(() => {
+            exploded[number] = true;
+            explosion[number] = false;
+        }, 250);
     }
     
     function handleUnExplode(number) {
@@ -27,8 +34,13 @@
     }
 </script>
 
-<div class="grid grid-cols-3">
+<div class="grid grid-cols-3 sm:grid-cols-5">
     {#each exploded as state, i}
+        {#if explosion[i]}
+            <div transition:fly={{ y: 100, duration: 250 }}>
+                <Explosion />
+            </div>
+        {/if}
         {#if exploded[i]}
             <div transition:explodeTransition>
                 <button on:click={() => handleUnExplode(i)}>
