@@ -18,7 +18,6 @@
 	}
 </script>
 
-/* eslint-disable svelte/a11y */
 <div
 	class="fixed right-0 z-50 m-2 rounded-xl bg-gradient-to-r from-indigo-600 to-cyan-600"
 	class:p-3={showNavBar}
