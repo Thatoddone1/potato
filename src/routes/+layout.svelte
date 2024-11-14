@@ -9,6 +9,7 @@
 	}
 	let homeURL = url_for('/');
 	let aboutURL = url_for('/about');
+	let potatoTacToeURL = url_for('/potato-tac-toe');
 	let showNavBar = $state(false);
 	function mouseHover() {
 		showNavBar = true;
@@ -18,18 +19,37 @@
 	}
 </script>
 
+<svelte:head>
+	<title>potato</title>
+	<meta name="description" content="potato themed activites, learn about potatoes!" />
+	<meta name="keywords" content="potato, educational" />
+	<meta name="author" content="thatoddone1" />
+</svelte:head>
+
 <div
-	class="fixed right-0 z-50 m-2 rounded-xl bg-gradient-to-r from-indigo-600 to-cyan-600"
-	class:p-3={showNavBar}
-	class:p-1={!showNavBar}
-	onmouseover={mouseHover}
-	onmouseout={mouseUnHover}
+	class="duration-800 group fixed right-1 top-1 m-3 w-16 rounded-3xl bg-blue-400 p-3 transition-all ease-in-out hover:w-80"
 >
-	{#if showNavBar}
-		<a href={homeURL} class="m-2 rounded-xl bg-cyan-400 p-2">Home</a>
-		<a href={aboutURL} class="m-2 rounded-xl bg-cyan-400 p-2">About</a>
-	{:else}
-		<img src="/potatoes/potato.png" class="size-6" />
-	{/if}
+	<div class="flex gap-3">
+		<!-- svelte-ignore a11y_img_redundant_alt -->
+		<img src="/potatoes/potato.png" alt="a potato" class="size-10 rounded-full" />
+		<a
+			class="text-md invisible flex items-center justify-center rounded-md bg-slate-100 p-1 font-semibold group-hover:visible"
+			href={homeURL}
+		>
+			Home
+		</a>
+		<a
+			class="text-md invisible flex items-center justify-center rounded-md bg-slate-100 p-1 font-semibold group-hover:visible"
+			href={aboutURL}
+		>
+			About
+		</a>
+		<a
+			class="text-md invisible flex items-center justify-center rounded-md bg-slate-100 p-1 font-semibold group-hover:visible"
+			href={potatoTacToeURL}
+		>
+			Potato-Tac-Toe
+		</a>
+	</div>
 </div>
 {@render children()}
