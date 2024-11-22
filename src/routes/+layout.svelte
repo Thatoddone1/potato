@@ -25,31 +25,9 @@
 	<meta name="keywords" content="potato, educational" />
 	<meta name="author" content="thatoddone1" />
 </svelte:head>
-
-<div
-	class="z-50 duration-800 group fixed right-1 top-1 m-3 w-16 rounded-3xl bg-blue-400 p-3 transition-all ease-in-out hover:w-80"
->
-	<div class="flex gap-3">
-		<!-- svelte-ignore a11y_img_redundant_alt -->
-		<img src="/potatoes/potato.png" alt="a potato" class="rounded-full h-10 w-10" />
-		<a
-			class="text-md invisible flex items-center justify-center rounded-md bg-slate-100 p-1 font-semibold group-hover:visible"
-			href={homeURL}
-		>
-			Home
-		</a>
-		<a
-			class="text-md invisible flex items-center justify-center rounded-md bg-slate-100 p-1 font-semibold group-hover:visible"
-			href={aboutURL}
-		>
-			About
-		</a>
-		<a
-			class="text-md invisible flex items-center justify-center rounded-md bg-slate-100 p-1 font-semibold group-hover:visible"
-			href={potatoTacToeURL}
-		>
-			Potato-Tac-Toe
-		</a>
-	</div>
+<div class="group fixed right-0 m-2 flex flex-auto flex-row rounded-xl bg-gray-500 z-50 transition-all duration-300 transform w-10 h-10 hover:w-auto hover:h-auto">
+	<a href={homeURL} class="flex p-2 m-2 rounded-full text-md bg-cyan-600 transition-all duration-300 transform scale-0 group-hover:scale-100">Home</a>
+	<a href={aboutURL} class="flex p-2 m-2 rounded-full text-md bg-cyan-600 transition-all duration-300 transform scale-0 group-hover:scale-100">About</a>
+	<a href={potatoTacToeURL} class="flex p-2 m-2 rounded-full text-md bg-cyan-600 transition-all duration-300 transform scale-0 group-hover:scale-100">Potato-Tac-Toe</a>
 </div>
 {@render children()}
