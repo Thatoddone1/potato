@@ -10,6 +10,7 @@
 	let homeURL = url_for('/');
 	let aboutURL = url_for('/about');
 	let potatoTacToeURL = url_for('/potato-tac-toe');
+	let factsURL = url_for('/facts');
 	let showNavBar = $state(false);
 	function mouseHover() {
 		showNavBar = true;
@@ -29,5 +30,6 @@
 	<a href={homeURL} class="flex p-2 m-2 rounded-full text-md bg-cyan-600 transition-all duration-300 transform scale-0 group-hover:scale-100">Home</a>
 	<a href={aboutURL} class="flex p-2 m-2 rounded-full text-md bg-cyan-600 transition-all duration-300 transform scale-0 group-hover:scale-100">About</a>
 	<a href={potatoTacToeURL} class="flex p-2 m-2 rounded-full text-md bg-cyan-600 transition-all duration-300 transform scale-0 group-hover:scale-100">Potato-Tac-Toe</a>
+	<a href={factsURL} class="flex p-2 m-2 rounded-full text-md bg-cyan-600 transition-all duration-300 transform scale-0 group-hover:scale-100">Facts</a>
 </div>
 {@render children()}
