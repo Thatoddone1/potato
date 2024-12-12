@@ -12,3 +12,12 @@
 <p class="m-3 text-center text-gray-600">
 	<bold class="font-bold">coming soon!</bold> more potato content, coming soon to potato.joshuarocks.me
 </p>
+<hr />
+<p class="m-3 text-center text-2xl text-gray-600">
+	<bold class="font-bold">Potato Resources:</bold> 
+</p>
+<p class="m-3 text-center font-bold text-blue-600">
+	<a
+		href="https://www.potatonewstoday.com"
+		>Potato News Today</a>
+</p>
