@@ -11,6 +11,7 @@
 	let aboutURL = url_for('/about');
 	let potatoTacToeURL = url_for('/potato-tac-toe');
 	let factsURL = url_for('/facts');
+	let wikipotatoURL = url_for('/wikipotato');
 	let showNavBar = $state(false);
 	function mouseHover() {
 		showNavBar = true;
@@ -26,10 +27,13 @@
 	<meta name="keywords" content="potato, educational" />
 	<meta name="author" content="thatoddone1" />
 </svelte:head>
-<div class="group fixed right-0 m-2 flex flex-auto flex-row rounded-xl bg-gray-500 z-50 transition-all duration-300 transform w-10 h-10 hover:w-auto hover:h-auto">
-	<a href={homeURL} class="flex p-2 m-2 rounded-full text-md bg-cyan-600 transition-all duration-300 transform scale-0 group-hover:scale-100">Home</a>
-	<a href={aboutURL} class="flex p-2 m-2 rounded-full text-md bg-cyan-600 transition-all duration-300 transform scale-0 group-hover:scale-100">About</a>
-	<a href={potatoTacToeURL} class="flex p-2 m-2 rounded-full text-md bg-cyan-600 transition-all duration-300 transform scale-0 group-hover:scale-100">Potato-Tac-Toe</a>
-	<a href={factsURL} class="flex p-2 m-2 rounded-full text-md bg-cyan-600 transition-all duration-300 transform scale-0 group-hover:scale-100">Facts</a>
+<div class="flex mb-2 bg-gray-300 z-50 w-full justify-between items-center">
+		<a href={homeURL} class="p-2 m-2 text-lg rounded-md bg-blue-400">Home</a>
+	<div>
+		<a href={potatoTacToeURL} class="p-2 m-2 rounded-lg text-md bg-cyan-400">Potato-Tac-Toe</a>
+		<a href={factsURL} class="p-2 m-2 rounded-lg text-md bg-cyan-400">Facts</a>
+		<a href={wikipotatoURL} class="p-2 m-2 rounded-lg text-md bg-cyan-400">WikiPotato</a>
+	</div>
+	<a href={aboutURL} class="p-2 m-2 rounded-lg text-md bg-violet-400">About</a>
 </div>
 {@render children()}
