@@ -20,4 +20,8 @@
 	<a
 		href="https://www.potatonewstoday.com"
 		>Potato News Today</a>
+	<a
+		href="https://www.amazon.com/Fresh-Produce-Brands-May-Vary/dp/B07BBLJD8P/ref=sr_1_3_f3_0g_wf"
+		>Order a potato</a>
+	
 </p>
