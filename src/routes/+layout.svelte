@@ -28,12 +28,12 @@
 	<meta name="author" content="thatoddone1" />
 </svelte:head>
 <div class="flex mb-2 bg-gray-300 z-50 w-full justify-between items-center">
-		<a href={homeURL} class="p-2 m-2 text-lg rounded-md bg-blue-400">Home</a>
+	<a href={homeURL} class="p-2 m-2 text-lg rounded-lg bg-blue-400">Home</a>
 	<div>
 		<a href={potatoTacToeURL} class="p-2 m-2 rounded-lg text-md bg-cyan-400">Potato-Tac-Toe</a>
 		<a href={factsURL} class="p-2 m-2 rounded-lg text-md bg-cyan-400">Facts</a>
 		<a href={wikipotatoURL} class="p-2 m-2 rounded-lg text-md bg-cyan-400">WikiPotato</a>
 	</div>
-	<a href={aboutURL} class="p-2 m-2 rounded-lg text-md bg-violet-400">About</a>
+	<a href={aboutURL} class="p-2 m-2 text-lg rounded-lg bg-violet-400">About</a>
 </div>
 {@render children()}
